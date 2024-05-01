@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+
+<link rel="stylesheet" href="css/index.css" />
+<body>
+    <div class ="row">
+        <form method="post" action="/addsong" class="details-form">
+            <h3>Enter Song Details</h3>
+          <input
+            type="text"
+            name="songname"
+            placeholder="Enter Song name"
+            required
+          />
+          <br><br>
+          <input
+            type="text"
+            name="film"
+            placeholder="Enter Film name"
+            required
+          />
+          <br><br>
+          <input
+            type="text"
+            name="director"
+            placeholder="Enter Music Director's name"
+            required
+          />
+          <br><br>
+          <input
+            type="text"
+            name="singer"
+            placeholder="Enter Singer name"
+            required
+          />
+          <br><br>
+          <input
+            type="text"
+            name="actor"
+            placeholder="Enter Actor name"
+           
+          />
+          <br><br>
+          <input
+            type="text"
+            name="actress"
+            placeholder="Enter Actress name"
+            
+          />
+          <br><br>
+            <button type="submit" class="btn">ADD</button>
+        </form>
+        <form method="get" action="/songs">
+            <button type="submit" class="btn">songs</button>
+        </form>
+        
+    </div>
+</body>
+</html>

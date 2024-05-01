@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local storage</title>
+    <style>
+        body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+.cont {
+  border: 2px solid black;
+  width: 40rem;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cont a {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form label {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.form input {
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+}
+
+.form button  , .form button a{
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: ;
+
+}
+
+.form button:hover {
+  background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+    <div class="cont">
+        <a href="./dat.html">ALL USER DATA</a>
+        <form class="form">
+            <label for="email">Name - </label>
+            <input type="text"  id="name" placeholder="enter email" required>
+            <br><br>
+            <label for="email">email - </label>
+            <input type="email"  id="email" placeholder="enter email" required>
+            <br><br>
+            <label for="email">password - </label>
+            <input type="password"  id="password" placeholder="enter email" required>
+            <br><br>
+            <label for="roll">Roll no. - </label>
+            <input type="number" id = "roll" placeholder="Enter roll no" required>
+            <br><br>
+            <button onclick=handlesubmit()>Submit</button>
+            <!-- <button ><a href="./dat.html">ALL USER DATA</a></button> -->
+        </form>
+    </div>
+
+    <script src="./ind.js"></script>
+</body>
+</html>
