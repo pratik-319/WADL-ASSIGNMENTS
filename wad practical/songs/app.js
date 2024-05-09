@@ -103,14 +103,14 @@ app.get("/songbysingerfilm/:singer/:film" , (req,res)=>{
 });
 
 
-app.put("/update/:name" , async (req,res)=>{
-    try{
-        const {name } = req.params;
-        const {actor , actress} = req.body;
+// app.put("/update/:name" , async (req,res)=>{
+//     try{
+//         const {name } = req.params;
+//         const {actor , actress} = req.body;
 
-        const song = await Songs.findOneAndUpdate(
-            name,
-            {#set : {actor : actor , actre}}
-        )
-    }
-})
+//         const song = await Songs.findOneAndUpdate(
+//             name,
+//             {#set : {actor : actor , actre}}
+//         )
+//     }
+// })
